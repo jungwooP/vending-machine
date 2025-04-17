@@ -87,7 +87,7 @@ void Widget::on_pbReset_clicked()
         remainder %= 50;
         num10Won = remainder / 10;
         remainder %= 10;
-        QString msgcontents = QString("500won: %1coins\n100won: %2coins\n50won: %3coins\n10won: %4 coins").arg(num500Won).arg(num100Won).arg(num50Won).arg(num10Won);
+        QString msgcontents = QString("500won: %1 coins\n100won: %2 coins\n50won: %3 coins\n10won: %4 coins").arg(num500Won).arg(num100Won).arg(num50Won).arg(num10Won);
         mb.information(this,"Change",msgcontents);
         money = 0;
         changeMoney(0);
